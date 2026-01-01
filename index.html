@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox-Style Casino</title>
+    <link rel="stylesheet" href="casino.css">
+</head>
+<body>
+    <!-- Main layout container -->
+    <div class="container">
+        <!-- Left panel with game list -->
+        <div class="left-panel">
+            <h2>Casino Games</h2>
+            <ul class="game-list">
+                <li><button class="game-btn" data-game="mystery-box">Mystery Box</button></li>
+                <li><button class="game-btn" data-game="slots">Slots</button></li>
+                <li><button class="game-btn" data-game="roulette">Roulette</button></li>
+                <li><button class="game-btn" data-game="crash">Crash</button></li>
+                <li><button class="game-btn" data-game="mines">Mines</button></li>
+                <li><button class="game-btn" data-game="towers">Towers</button></li>
+                <li><button class="game-btn" data-game="poker">Poker</button></li>
+                <li><button class="game-btn" data-game="blackjack">Blackjack</button></li>
+                <li><button class="game-btn" data-game="cups">Cups</button></li>
+            </ul>
+        </div>
 
+        <!-- Main content area -->
+        <div class="main-content">
+            <!-- HUD - Token counter in top right -->
+            <div class="hud">
+                <div class="token-display">
+                    <span class="token-icon">🪙</span>
+                    <span class="token-count" id="tokenCount">1000</span>
+                </div>
+            </div>
+
+            <!-- Game screens will be loaded here -->
+            <div class="game-screen" id="gameScreen">
+                <div class="welcome-screen">
+                    <h1>Welcome to Roblox Casino!</h1>
+                    <p>Select a game from the left panel to start playing.</p>
+                    <p>You start with 1000 tokens. Good luck!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti effect container -->
+    <div id="confetti-container"></div>
+
+    <!-- Include the casino JavaScript -->
+    <script src="casino.js"></script>
+</body>
+</html>
